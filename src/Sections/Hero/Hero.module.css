@@ -14,14 +14,15 @@
     color: var(--color-highlight);
     font-size: var(--font-size-4);
     letter-spacing: -0.1rem;
+    
 }
 
 .heroTitle {
-    font-size:var(--font-size-11);
+    font-size: var(--font-size-11);
 }
 
 .heroJobTitle {
-    font-size:var(--font-size-10);
+    font-size: var(--font-size-10);
 }
 
 .heroDescription {
@@ -29,4 +30,60 @@
     width: 55rem;
     font-size: var(--font-size-4);
     font-weight: var(--font-weight-500);
+    word-wrap: break-word;
+}
+
+.CV {
+    margin-top: 3rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--color-highlight);
+    color: var(--color-highlight);
+    border-radius: 0.4rem;
+    width: 25rem;
+    padding: 2rem;
+    font-size: var(--font-size-4);
+}
+
+@media screen and (max-width: 1200px) {
+
+    .heroSection {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .heroTitle {
+        font-size: var(--font-size-9);
+    }
+
+    .heroJobTitle {
+        font-size: var(--font-size-8);
+    }
+
+
+    .heroDescription {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .heroTitle {
+        font-size: var(--font-size-7);
+    }
+
+    .heroJobTitle {
+        font-size: var(--font-size-7);
+    }
+
+    .heroDescription {
+        width: 100%;
+    }
+
+
 }

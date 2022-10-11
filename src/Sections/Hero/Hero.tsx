@@ -7,7 +7,7 @@ const content = [
     content: <span className={styles.heroIntro}> Hi, I am </span>,
   },
   {
-    content: <h1 className={styles.heroTitle}>Niclas Gregor</h1>,
+    content: <h1 className={styles.heroTitle}>Niclas Gregor.</h1>,
   },
   {
     content: <h2 className={styles.heroJobTitle}>Software / Web Developer</h2>,
@@ -21,13 +21,28 @@ const content = [
       </p>
     ),
   },
+  {
+    content: (
+      <a
+        href={"/NiclasGregorCV.pdf"}
+        target="_blank"
+        rel="noreferrer"
+        className={styles.CV}
+      >
+        Resume
+      </a>
+    ),
+  },
 ];
 
-const Hero = () => {
+interface HeroProps {
+  setIsAnimating: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Hero: React.FC<HeroProps> = ({ setIsAnimating }) => {
   return (
     <section className={styles.heroSection}>
-      {
-      content.map((item, index) => (
+      {content.map((item, index) => (
         <CSSTransition
           key={index}
           in={true}
@@ -36,8 +51,11 @@ const Hero = () => {
             enter: "animte__animated",
             enterActive: "animte__animated animate__fadeInUp",
             enterDone: `animate__animated animate__fadeInUp animate__delay-${
-                index * 1
-              }s`,
+              index * 1
+            }s`,
+          }}
+          addEndListener={(node, done) => {
+            node.addEventListener("animationend", () => setIsAnimating(false));
           }}
           appear={true}
         >

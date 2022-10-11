@@ -21,8 +21,8 @@ const navLinks = [
 ];
 
 interface NavbarProps {
-  setIsNavOpen: (value: boolean) => void;
-  setIsAnimating: (value: boolean) => void;
+  setIsNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsAnimating: React.Dispatch<React.SetStateAction<boolean>>;
   isAnimating: boolean;
 }
 

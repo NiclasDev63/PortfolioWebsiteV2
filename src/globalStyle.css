@@ -79,6 +79,7 @@ html {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   background-color: var(--color-primary);
 }
 
