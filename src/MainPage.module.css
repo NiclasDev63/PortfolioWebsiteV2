@@ -1,0 +1,13 @@
+.mainContainer {
+    height: 1000rem;
+}
+
+.blur {
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.mainContent {
+    margin: 0 auto;
+    width: 95%;
+}

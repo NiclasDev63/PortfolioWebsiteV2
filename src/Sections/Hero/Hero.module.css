@@ -1,0 +1,32 @@
+.heroSection {
+    margin: 0 auto;
+    width: 120rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.heroIntro {
+    font-family: var(--font-mono);
+    color: var(--color-highlight);
+    font-size: var(--font-size-4);
+    letter-spacing: -0.1rem;
+}
+
+.heroTitle {
+    font-size:var(--font-size-11);
+}
+
+.heroJobTitle {
+    font-size:var(--font-size-10);
+}
+
+.heroDescription {
+    margin-top: 2rem;
+    width: 55rem;
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-500);
+}

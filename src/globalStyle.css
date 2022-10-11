@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter+Tight:wght@400;500;700&family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+
+  /* Font */
+  --font-mono: 'Fira Mono', monospace, 'Roboto', sans-serif;
+  --font-inter: 'Inter Tight', 'Inter';
+
+  /* Font-Weight */
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+
+  /* Font-Size */
+  --font-size-1: 1.0rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: 1.4rem;
+  --font-size-4: 1.8rem;
+  --font-size-5: 2.4rem;
+  --font-size-6: 3.0rem;
+  --font-size-7: 3.6rem;
+  --font-size-8: 4.8rem;
+  --font-size-9: 6.0rem;
+  --font-size-10: 7.2rem;
+  --font-size-11: 9.6rem;
+
+  /* Font-Color */
+  --font-color-header-1: #ced4da;
+  --font-color-header-2: #868e96;
+
+  --font-color-paragraph: #495057;
+
+  /* Colors */
+  --color-primary-shadow-2: #091629;
+  --color-primary-shadow-1: #0a182e;
+  --color-primary: #0b1b33;
+  --color-primary-tint-1: #233247;
+  --color-primary-tint-2: #3c495c;
+  --color-primary-tint-3: #545f70;
+
+  --color-highlight: #38d9a9;
+  --color-highlight-shade-1: #32c398;
+  --color-highlight-shade-2: #2dae87;
+  --color-highlight-shade-3: #279876;
+
+}
+
+* {
+  font-family: var(--font-inter);
+  font-weight: var(--font-weight-400);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--font-color-paragraph);
+  border-radius: 1.2rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-primary);
+}
+
+h1 {
+  color: var(--font-color-header-1);
+  font-weight: var(--font-weight-700);
+}
+
+h2 {
+  color: var(--font-color-header-2);
+  font-weight: var(--font-weight-700);
+}
+
+p {
+  color: var(--font-color-paragraph);
+}
+
+button {
+  cursor: pointer;
+}
