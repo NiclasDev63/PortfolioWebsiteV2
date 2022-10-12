@@ -15,9 +15,9 @@ const content = [
   {
     content: (
       <p className={styles.heroDescription}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi dolore,
-        eveniet cumque inventore ut ullam pariatur excepturi sunt, laborum
-        perspiciatis explicabo aspernatur iste quisquam quod?
+        I am 21 years old and currently studying computer science at the
+        technical university in Darmstadt. I am passionate about developing new
+        software / websites and am always looking for new challenges.
       </p>
     ),
   },
@@ -48,8 +48,19 @@ const Hero: React.FC<HeroProps> = ({ setIsAnimating }) => {
           in={true}
           timeout={0}
           classNames={{
-            enter: "animte__animated",
-            enterActive: "animte__animated animate__fadeInUp",
+            appear: "animate__animated",
+            appearActive: `animate__animated animate__fadeInUp animate__delay-${
+              index * 1
+            }s`,
+            appearDone: `animate__animated animate__fadeInUp animate__delay-${
+              index * 1
+            }s`,
+            enter: `animate__animated animate__fadeInUp animate__delay-${
+              index * 1
+            }s`,
+            enterActive: `animate__animated animate__fadeInUp animate__delay-${
+              index * 1
+            }s`,
             enterDone: `animate__animated animate__fadeInUp animate__delay-${
               index * 1
             }s`,

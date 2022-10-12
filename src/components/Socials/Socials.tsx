@@ -5,7 +5,7 @@ import { CSSTransition } from "react-transition-group";
 const icons = [
   {
     icon: <FiGithub className={styles.icon} />,
-    link: "https://github.com/NiclasDev63/PortfolioWebsiteV2",
+    link: "https://github.com/NiclasDev63/",
   },
   {
     icon: <FiLinkedin className={styles.icon} />,
@@ -25,8 +25,19 @@ const Socials = () => {
           in={true}
           timeout={0}
           classNames={{
-            enter: "animte__animated",
-            enterActive: "animte__animated animate__fadeInDown",
+            appear: "animate__animated",
+            appearActive: `animate__animated animate__fadeInDown animate__delay-${
+              index * 1
+            }s`,
+            appearDone: `animate__animated animate__fadeInDown animate__delay-${
+              index * 1
+            }s`,
+            enter: `animate__animated animate__fadeInDown animate__delay-${
+              index * 1
+            }s`,
+            enterActive: `animate__animated animate__fadeInDown animate__delay-${
+              index * 1
+            }s`,
             enterDone: `animate__animated animate__fadeInDown animate__delay-${
               index * 1
             }s`,
@@ -42,7 +53,10 @@ const Socials = () => {
         in={true}
         timeout={0}
         classNames={{
-          enter: "animte__animated",
+          appear: "animate__animated",
+          appearActive: "animate__animated animate__fadeIn",
+          appearDone: "animate__animated animate__fadeIn",
+          enter: "animate__animated animate__fadeIn",
           enterActive: "animte__animated animate__fadeIn",
           enterDone: "animate__animated animate__fadeIn",
         }}

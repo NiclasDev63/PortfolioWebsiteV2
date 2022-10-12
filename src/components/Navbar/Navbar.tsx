@@ -69,7 +69,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             <CSSTransition
               in={true}
               classNames={{
-                enter: "animate__animated",
+                appear: "animate__animated",
+                appearActive: "animate__animated animate__fadeIn",
+                appearDone: "animate__animated animate__fadeIn",
+                enter: "animate__animated animate__fadeIn",
+                enterActive: "animate__animated animate__fadeIn",
                 enterDone: "animate__animated animate__fadeIn",
               }}
               timeout={0}
@@ -106,7 +110,19 @@ const Navbar: React.FC<NavbarProps> = (props) => {
               <CSSTransition
                 in={props.isAnimating}
                 classNames={{
-                  enter: "animate__animated",
+                  appear: "animate__animated",
+                  appearActive: `animate__animated animate__fadeInDown animate__delay-${
+                    index * 1
+                  }s`,
+                  appearDone: `animate__animated animate__fadeInDown animate__delay-${
+                    index * 1
+                  }s`,
+                  enter: `animate__animated animate__fadeInDown animate__delay-${
+                    index * 1
+                  }s`,
+                  enterActive: `animate__animated animate__fadeInDown animate__delay-${
+                    index * 1
+                  }s`,
                   enterDone: `animate__animated animate__fadeInDown animate__delay-${
                     index * 1
                   }s`,
@@ -129,7 +145,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           <CSSTransition
             in={true}
             classNames={{
-              enter: "animate__animated",
+              appear: "animate__animated",
+              appearActive: "animate__animated animate__fadeIn",
+              appearDone: "animate__animated animate__fadeIn",
+              enter: "animate__animated animate__fadeIn",
+              enterActive: "animate__animated animate__fadeIn",
               enterDone: "animate__animated animate__fadeIn",
             }}
             timeout={0}
