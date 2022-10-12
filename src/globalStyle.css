@@ -43,6 +43,9 @@
   --color-highlight-shade-2: #2dae87;
   --color-highlight-shade-3: #279876;
 
+  /* Border Radius */
+  --border-radius-standard: 0.4rem;
+
 }
 
 * {
@@ -58,20 +61,15 @@
   width: 0.8rem;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
   background: none;
 }
 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: var(--font-color-paragraph);
   border-radius: 1.2rem;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 html {

@@ -162,7 +162,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           >
             <>
               {hasWidth && (
-                <div style={{ zIndex: 2 }}>
+                <div style={{ zIndex: 11 }}>
                   <Hamburger
                     toggled={isNavOpen}
                     color={"#38d9a9"}

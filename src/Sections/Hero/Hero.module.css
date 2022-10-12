@@ -1,6 +1,6 @@
 .heroSection {
     margin: 0 auto;
-    width: 120rem;
+    width: min(120rem, 100vw);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@
     text-decoration: none;
     border: 1px solid var(--color-highlight);
     color: var(--color-highlight);
-    border-radius: 0.4rem;
+    border-radius: var(--border-radius-standard);
     width: 25rem;
     padding: 2rem;
     font-size: var(--font-size-4);

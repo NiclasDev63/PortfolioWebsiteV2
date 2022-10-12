@@ -1,0 +1,131 @@
+.AboutMesection {
+    margin: 10rem auto;
+    width: min(90rem, 100vw);
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6rem;
+}
+
+.AboutMeTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.AboutMeTitle {
+    font-size: var(--font-size-7);
+}
+
+.bar {
+    width: 30rem;
+    height: 0.1rem;
+    background-color: var(--font-color-paragraph);
+}
+
+.AboutMeContent {
+    display: flex;
+    gap: 4rem;
+}
+
+.AboutMeTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-500);
+    word-wrap: break-word;
+}
+
+
+.imgContainer {
+    position: relative;
+    height: 40rem;
+    width: 25rem;
+}
+
+.backgroundBox {
+    content: "";
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    bottom: -1rem;
+    right: -1rem;
+    border: 3px solid var(--color-highlight);
+    border-radius: var(--border-radius-standard);
+    opacity: 0.5;
+}
+
+.imgFilter {
+    height: inherit;
+    width: inherit;
+    background-color: var(--color-highlight);
+    border-radius: var(--border-radius-standard);
+    transition: transform 0.5s ease;
+}
+
+.imgFilter:hover {
+    transform: translate(1rem, 1rem);
+}
+
+.picture {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    filter: grayscale(100%) contrast(1);
+    mix-blend-mode: multiply;
+    z-index: 1;
+    border-radius: inherit;
+    transition: all 0.5s ease;
+}
+
+.picture:hover {
+    filter: none;
+    mix-blend-mode: normal;
+}
+
+@media screen and (max-width: 1200px) {
+    .AboutMesection {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .AboutMesection {
+        height: 100%;
+        gap: 4rem;
+    }
+
+    .AboutMeTitle {
+        font-size: var(--font-size-6);
+    }
+
+    .AboutMeContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .imgContainer {
+        position: relative;
+        height: 35rem;
+        width: 22.5rem;
+    }
+
+    .AboutMeTextContainer {
+        font-size: var(--font-size-3);
+    }
+
+    .bar {
+        width: 20rem;
+    }
+
+}

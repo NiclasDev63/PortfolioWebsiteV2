@@ -24,7 +24,7 @@ const content = [
   {
     content: (
       <a
-        href={"/NiclasGregorCV.pdf"}
+        href={"/assets/NiclasGregorCV.pdf"}
         target="_blank"
         rel="noreferrer"
         className={styles.CV}
