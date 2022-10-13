@@ -1,7 +1,7 @@
-.AboutMesection {
+.AboutMeSection {
     margin: 10rem auto;
     width: min(90rem, 100vw);
-    height: 55rem;
+    height: 90rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -86,15 +86,40 @@
     mix-blend-mode: normal;
 }
 
+.skillsContainer {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.skillContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skillIcon {
+    height: 2rem;
+    width: 2rem;
+    color: var(--color-highlight)
+}
+
+.skill {
+    font-size: var(--font-size-3);
+    color: var(--font-color-paragraph)
+}
+
+
 @media screen and (max-width: 1200px) {
-    .AboutMesection {
+    .AboutMeSection {
         width: 100%;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    .AboutMesection {
+    .AboutMeSection {
         height: 100%;
         gap: 4rem;
     }
@@ -113,6 +138,9 @@
 }
 
 @media screen and (max-width: 480px) {
+    .AboutMeTitle {
+        font-size: var(--font-size-5);
+    }
 
     .imgContainer {
         position: relative;
@@ -121,11 +149,11 @@
     }
 
     .AboutMeTextContainer {
-        font-size: var(--font-size-3);
+        font-weight: var(--font-weight-400);
     }
 
     .bar {
-        width: 20rem;
+        width: 15rem;
     }
 
 }
