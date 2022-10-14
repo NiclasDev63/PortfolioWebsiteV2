@@ -1,6 +1,6 @@
 import styles from "./MainPage.module.css";
 import { useState } from "react";
-import { Hero, AboutMe } from "./Sections";
+import { Hero, AboutMe, Projects } from "./Sections";
 import { Socials, Navbar } from "./components";
 
 const MainPaige = () => {
@@ -18,8 +18,10 @@ const MainPaige = () => {
       <div className={`${styles.mainContainer} ${isNavOpen && styles.blur}`}>
         <div className={styles.mainContent}>
           {!isNavAnimating && <Hero setIsAnimating={setIsHeroAnimating} />}
+          {isNavAnimating && <div className={styles.placeHolder}></div>}
           {!isHeroAnimating && <Socials />}
-          {!isHeroAnimating && <AboutMe />}
+          <AboutMe />
+          <Projects />
         </div>
       </div>
     </>

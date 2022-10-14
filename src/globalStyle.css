@@ -34,6 +34,7 @@
   --color-primary-shadow-2: #091629;
   --color-primary-shadow-1: #0a182e;
   --color-primary: #0b1b33;
+  --color-primary-light: #0e2447;
   --color-primary-tint-1: #233247;
   --color-primary-tint-2: #3c495c;
   --color-primary-tint-3: #545f70;
@@ -45,6 +46,9 @@
 
   /* Border Radius */
   --border-radius-standard: 0.4rem;
+
+  /*Box Shadow */
+  --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 17, 39, 0.6);
 
 }
 

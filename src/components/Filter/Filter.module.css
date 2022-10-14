@@ -1,0 +1,36 @@
+.imgFilter {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-highlight);
+    border-radius: var(--border-radius-standard);
+}
+
+.picture {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1);
+    mix-blend-mode: multiply;
+    z-index: 1;
+    border-radius: inherit;
+    transition: all 0.5s ease;
+}
+
+.picture:hover {
+    filter: none;
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .imgFilter {
+        background-color: var(--color-primary);
+        opacity: 0.6;
+    }
+
+    .picture:hover {
+        filter: grayscale(100%) contrast(1);
+        mix-blend-mode: multiply;
+    }
+}

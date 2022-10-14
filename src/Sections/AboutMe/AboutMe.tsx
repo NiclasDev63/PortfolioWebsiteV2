@@ -3,13 +3,14 @@ import { useEffect, useRef } from "react";
 import "animate.css";
 import ScrollReveal from "scrollreveal";
 import { BiPlus } from "react-icons/bi";
+import { SectionTitle } from "../../components";
 
 const skills = [
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
-  "Nextjs",
+  "Next.js",
   "React",
   "Node.js",
   "Python",
@@ -17,6 +18,9 @@ const skills = [
   "Github",
   "NO SQL",
   "SQL",
+  "Docker",
+  "Kubernetes",
+  "AWS",
 ];
 
 const AboutMe = () => {
@@ -36,39 +40,39 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section className={styles.AboutMeSection} ref={aboutMeRef}>
-      <div className={styles.AboutMeTitleContainer}>
-        <h1 className={styles.AboutMeTitle}>About Me</h1>
-        <span className={styles.bar}></span>
-      </div>
-      <div className={styles.AboutMeContent}>
-        <div className={styles.AboutMeTextContainer}>
+    <section className={styles.aboutMeSection} ref={aboutMeRef}>
+      <SectionTitle title="About Me" />
+      <div className={styles.aboutMeContent}>
+        <div className={styles.aboutMeTextContainer}>
           <p>
-            Hello! My name is Brittany and I enjoy creating things that live on
-            the internet. My interest in web development started back in 2012
-            when I decided to try editing custom Tumblr themes — turns out
-            hacking together a custom reblog button taught me a lot about HTML &
-            CSS!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            beatae dolore labore dolor optio. Nostrum quasi dignissimos corporis
+            officiis illum voluptas. Ex quae quam adipisci maxime saepe mollitia
+            sunt quaerat! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Qui, commodi. Ea consequatur molestias quisquam voluptatum in
+            aperiam tenetur eum, porro beatae maxime aspernatur natus eius minus
+            odit reprehenderit. Exercitationem, provident!
           </p>
 
           <p>
-            Fast-forward to today, and I’ve had the privilege of working at an
-            advertising agency, a start-up, a huge corporation, and a
-            student-led design studio. My main focus these days is building
-            accessible, inclusive products and digital experiences at
-            Upstatement for a variety of clients.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+            facilis consequuntur hic harum maxime sint eum blanditiis? Iure,
+            aut. Accusamus consequuntur dolorem adipisci? Eligendi, voluptate
+            quidem. Culpa animi eos voluptate.
           </p>
 
           <p>
-            I also recently launched a course that covers everything you need to
-            build a web app with the Spotify API using Node & React.{" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            culpa, accusantium quo aut recusandae, veniam esse harum odio non
+            sapiente beatae laudantium nihil adipisci reprehenderit,
+            exercitationem consequatur nulla ea aliquid!
           </p>
 
           <p>Here are a few technologies I’ve been working with recently:</p>
           <div className={styles.skillsContainer}>
-            {skills.map((skill) => (
-              <div className={styles.skillContainer}>
-                <BiPlus className={styles.skillIcon} />
+            {skills.map((skill, index) => (
+              <div className={styles.skillContainer} key={index}>
+                <BiPlus className={styles.skillIcon} key={index} />
                 <span className={styles.skill} key={skill}>
                   {skill}
                 </span>

@@ -1,36 +1,18 @@
-.AboutMeSection {
+.aboutMeSection {
     margin: 10rem auto;
     width: min(90rem, 100vw);
-    height: 90rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 6rem;
 }
 
-.AboutMeTitleContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-}
-
-.AboutMeTitle {
-    font-size: var(--font-size-7);
-}
-
-.bar {
-    width: 30rem;
-    height: 0.1rem;
-    background-color: var(--font-color-paragraph);
-}
-
-.AboutMeContent {
+.aboutMeContent {
     display: flex;
     gap: 4rem;
 }
 
-.AboutMeTextContainer {
+.aboutMeTextContainer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -112,33 +94,32 @@
 
 
 @media screen and (max-width: 1200px) {
-    .AboutMeSection {
+    .aboutMeSection {
         width: 100%;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    .AboutMeSection {
+    .aboutMeSection {
         height: 100%;
         gap: 4rem;
     }
 
-    .AboutMeTitle {
+    .aboutMeTitle {
         font-size: var(--font-size-6);
     }
 
-    .AboutMeContent {
+    .aboutMeContent {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
 
-
 }
 
 @media screen and (max-width: 480px) {
-    .AboutMeTitle {
+    .aboutMeTitle {
         font-size: var(--font-size-5);
     }
 
@@ -148,12 +129,8 @@
         width: 22.5rem;
     }
 
-    .AboutMeTextContainer {
+    .aboutMeTextContainer {
         font-weight: var(--font-weight-400);
-    }
-
-    .bar {
-        width: 15rem;
     }
 
 }

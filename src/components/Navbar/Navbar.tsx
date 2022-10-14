@@ -1,9 +1,14 @@
 import styles from "./Navbar.module.css";
 import { CSSTransition } from "react-transition-group";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "animate.css";
 import { Divide as Hamburger } from "hamburger-react";
-import { useGetWidth, useScrollDirection, useIsAtPosition } from "../../hooks";
+import {
+  useGetWidth,
+  useScrollDirection,
+  useIsAtPosition,
+  useOnClickOutside,
+} from "../../hooks";
 
 const navLinks = [
   {
@@ -31,6 +36,8 @@ const Navbar: React.FC<NavbarProps> = (props) => {
   const hasWidth = useGetWidth(768);
   const scrollDirection = useScrollDirection();
   const isAtTop = useIsAtPosition(0);
+  const menuRef = useRef<HTMLDivElement>(null);
+  useOnClickOutside(menuRef, () => setIsNavOpen(false));
 
   useEffect(() => {
     document.documentElement.style.overflow = isNavOpen ? "hidden" : "unset";
@@ -162,7 +169,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           >
             <>
               {hasWidth && (
-                <div style={{ zIndex: 11 }}>
+                <div style={{ zIndex: 11 }} ref={menuRef}>
                   <Hamburger
                     toggled={isNavOpen}
                     color={"#38d9a9"}
