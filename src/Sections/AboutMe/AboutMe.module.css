@@ -24,7 +24,7 @@
 
 .imgContainer {
     position: relative;
-    height: 40rem;
+    height: 35rem;
     width: 25rem;
 }
 
@@ -73,6 +73,7 @@
     align-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .skillContainer {
@@ -125,7 +126,7 @@
 
     .imgContainer {
         position: relative;
-        height: 35rem;
+        height: 30rem;
         width: 22.5rem;
     }
 

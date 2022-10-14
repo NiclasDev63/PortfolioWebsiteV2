@@ -9,11 +9,21 @@
 
 .titleWrapper {
     margin: 0 auto;
-    width: 80%;
+    position: relative;
+    width: 95%;
+    top: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
     .projectsContainer {
         width: 100%;
     }
+}
+
+
+@media screen and (max-width: 480px) {
+    .projectsContainer {
+        gap: 6rem;
+    }
+
 }

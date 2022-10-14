@@ -84,7 +84,7 @@ const AboutMe = () => {
           <div className={styles.backgroundBox}></div>
           <div className={styles.imgFilter}>
             <img
-              src="/assets/Passfoto.png"
+              src="/assets/Passfoto.webp"
               alt="Passfoto"
               className={styles.picture}
             />

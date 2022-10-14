@@ -33,7 +33,7 @@
     word-wrap: break-word;
 }
 
-.CV {
+.CVButton {
     margin-top: 3rem;
     display: block;
     text-align: center;
@@ -44,6 +44,11 @@
     width: 25rem;
     padding: 2rem;
     font-size: var(--font-size-4);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.CVButton:hover {
+    background-color: rgba(56, 217, 169, 0.1);
 }
 
 @media screen and (max-width: 1200px) {

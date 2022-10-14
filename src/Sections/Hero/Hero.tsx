@@ -27,7 +27,7 @@ const content = [
         href={"/assets/NiclasGregorCV.pdf"}
         target="_blank"
         rel="noreferrer"
-        className={styles.CV}
+        className={styles.CVButton}
       >
         Resume
       </a>

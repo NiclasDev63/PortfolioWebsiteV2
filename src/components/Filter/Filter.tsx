@@ -10,10 +10,10 @@ interface FilterProps {
 const Filter: React.FC<FilterProps> = (props: any) => {
   const classNameImage = props.classNameImage
     ? `${props.classNameImage} ${styles.picture}`
-    : `${styles.picture}`;
+    : styles.picture;
   const classNameFilter = props.classNameFilter
     ? `${props.classNameFilter} ${styles.imgFilter}`
-    : `${styles.imgFilter}`;
+    : styles.imgFilter;
 
   return (
     <div className={classNameFilter}>
