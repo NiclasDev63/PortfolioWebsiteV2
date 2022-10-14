@@ -1,6 +1,8 @@
 import styles from "./Card.module.css";
 import { FiGithub } from "react-icons/fi";
 import { Filter } from "../../../components";
+import ScrollReveal from "scrollreveal";
+import { useRef, useEffect } from "react";
 
 interface CardProps {
   left: boolean;
@@ -12,6 +14,21 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = (props) => {
+  const cardRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (cardRef.current) {
+      ScrollReveal().reveal(cardRef.current, {
+        origin: "bottom",
+        distance: "4rem",
+        easing: "linear",
+        delay: 200,
+        duration: 500,
+        viewFactor: 0.08,
+      });
+    }
+  }, []);
+
   const containerClass = props.left
     ? `${styles.cardContainer} ${styles.left}`
     : `${styles.cardContainer} ${styles.right}`;
@@ -21,7 +38,7 @@ const Card: React.FC<CardProps> = (props) => {
     : `${styles.cardContent} ${styles.right}`;
 
   return (
-    <div className={containerClass}>
+    <div className={containerClass} ref={cardRef}>
       <div className={contentClass}>
         <h1 className={styles.cardTitle}>{props.title}</h1>
         <p className={styles.cardDescription}>{props.description}</p>

@@ -1,7 +1,7 @@
 .cardContainer {
     margin: 0 auto;
     position: relative;
-    width: 80%;
+    width: 95%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .cardContent {
-    width: 70%;
+    width: 55%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,6 @@
 
 .cardDescription {
     font-size: var(--font-size-4);
-    font-weight: var(--font-weight-500);
 }
 
 .cardDescription {
@@ -47,8 +46,8 @@
 }
 
 .cardImageContainer {
-    width: 50%;
-    height: 30rem;
+    width: 65%;
+    height: 40rem;
 }
 
 .cardTechStack {
@@ -78,7 +77,6 @@
 @media screen and (max-width: 768px) {
     .cardContainer {
         box-shadow: var(--box-shadow-1);
-        width: 90%;
     }
 
     .cardContent {

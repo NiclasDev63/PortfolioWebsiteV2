@@ -1,6 +1,8 @@
 import styles from "./Projects.module.css";
 import Card from "./Card/Card";
 import { SectionTitle } from "../../components";
+import ScrollReveal from "scrollreveal";
+import { useRef, useEffect } from "react";
 
 const projects = [
   {
@@ -46,9 +48,25 @@ const projects = [
 ];
 
 const Projects = () => {
+  const titleRef = useRef<HTMLSpanElement | null>(null);
+
+  useEffect(() => {
+    if (titleRef.current) {
+      ScrollReveal().reveal(titleRef.current, {
+        origin: "bottom",
+        distance: "4rem",
+        easing: "linear",
+        delay: 200,
+        duration: 500,
+        viewFactor: 0.45,
+      });
+    }
+  }, []);
+
+
   return (
     <div className={styles.projectsContainer}>
-      <span className={styles.titleWrapper}>
+      <span className={styles.titleWrapper} ref={titleRef}>
       <SectionTitle title="Projects" /></span>
       {projects.map((project, index) => (
         <Card
