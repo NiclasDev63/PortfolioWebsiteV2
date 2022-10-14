@@ -13,15 +13,19 @@ import {
 const navLinks = [
   {
     name: "Home",
+    id: "hero",
   },
   {
-    name: "About",
+    name: "About Me",
+    id: "about-me",
   },
   {
     name: "Contact",
+    id: "projects",
   },
   {
     name: "Projects",
+    id: "projects",
   },
 ];
 
@@ -50,6 +54,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       setIsNavOpen(false);
     }
   }, [hasWidth]);
+
+  const linkClickHandler = (id: string) => {
+    if (hasWidth) {
+      setIsNavOpen(false);
+    }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -113,7 +124,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             </CSSTransition>
           </div>
           <div className={styles.navbar__links}>
-            {navLinks.map(({ name }, index) => (
+            {navLinks.map(({ name, id }, index) => (
               <CSSTransition
                 in={props.isAnimating}
                 classNames={{
@@ -143,7 +154,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 }}
                 appear={true}
               >
-                <li key={index} className={styles.navbar__links__link}>
+                <li
+                  key={index}
+                  className={styles.navbar__links__link}
+                  onClick={() => linkClickHandler(id)}
+                >
                   {name}
                 </li>
               </CSSTransition>
@@ -169,7 +184,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           >
             <>
               {hasWidth && (
-                <div style={{ zIndex: 11 }} ref={menuRef}>
+                <div className={styles.hamburgerWrapper}>
                   <Hamburger
                     toggled={isNavOpen}
                     color={"#38d9a9"}
@@ -197,10 +212,15 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           >
             <aside
               className={styles.navMenu}
+              ref={menuRef}
               style={{ display: hasWidth ? "" : "none" }}
             >
-              {navLinks.map(({ name }, index) => (
-                <li key={index} className={styles.navMenu__link}>
+              {navLinks.map(({ name, id }, index) => (
+                <li
+                  key={index}
+                  className={styles.navMenu__link}
+                  onClick={() => linkClickHandler(id)}
+                >
                   {name}
                 </li>
               ))}

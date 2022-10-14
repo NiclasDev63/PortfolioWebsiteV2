@@ -8,40 +8,40 @@ const projects = [
   {
     title: "Spooky Chat",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl.",
-    image: "https://picsum.photos/200/300",
-    techStack: ["React", "Typescript", "CSS", "Typescript", "CSS"],
+      "Spooky Chat is a chat platform that is completely anonymous. You don't have to provide an email address or any other information. The chat platform is designed so that no data is stored and you always start from 'zero' to guarantee full anonymity.",
+    image: "/assets/ProjectImages/SpookyChat.webp",
+    techStack: ["React", "Typescript", "CSS", "HTML", "Firestore"],
     link: "https://github.com/NiclasDev63/SpookyChat",
   },
   {
     title: "Mnist Recognition",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl.",
-    image: "https://picsum.photos/200/300",
-    techStack: ["React", "Typescript", "CSS", "Typescript", "CSS"],
+      "This project served to gain initial experience in the field of artificial intelligence. For this purpose, I trained a model using the MNIST dataset, so that it is able to determine digits drawn with the mouse.",
+    image: "/assets/ProjectImages/Mnist.webp",
+    techStack: ["Python", "Javascript", "HTML", "CSS", "Tensorflow"],
     link: "https://github.com/NiclasDev63/MNISTRecognition",
   },
   {
     title: "Algorithm Tutorial",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl.",
-    image: "https://picsum.photos/200/300",
+      "This tutorial series served to explain common algorithms simply and clearly in the German language.",
+    image: "/assets/ProjectImages/AlgorithmTutorial.webp",
     techStack: ["React", "Typescript", "CSS", "Typescript", "CSS"],
     link: "https://github.com/NiclasDev63/Algorithmen-einfach-erklaert",
   },
   {
     title: "Algorithm Visualizer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl.",
-    image: "https://picsum.photos/200/300",
+      "I have developed the Algorithm Visualizer to illustrate a few of the algorithms covered in my course.",
+    image: "/assets/ProjectImages/AlgorithmVisualizer.png",
     techStack: ["React", "Typescript", "CSS", "Typescript", "CSS"],
     link: "https://github.com/NiclasDev63/Algorithm-visualization",
   },
   {
     title: "ImmoScout24 Crawler",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl. Sed euismod, nunc ut aliquam ultricies, nunc nisl aliquam nisl, quis aliquam nunc nisl sit amet nisl.",
-    image: "https://picsum.photos/200/300",
+      "This was my first project when I started programming. Since I am also very interested in real estate besides programming I wrote an Immoscout24 crawler that automatically searches out all properties at a desired location and calculates them based on the rent index which is scraped from the homeday price atlas.",
+    image: "/assets/ProjectImages/ImmoScout24Crawler.jpg",
     techStack: ["React", "Typescript", "CSS", "Typescript", "CSS"],
     link: "https://github.com/NiclasDev63/ImmoScout24Crawler",
   },
@@ -63,11 +63,11 @@ const Projects = () => {
     }
   }, []);
 
-
   return (
-    <div className={styles.projectsContainer}>
+    <div className={styles.projectsContainer} id="projects">
       <span className={styles.titleWrapper} ref={titleRef}>
-      <SectionTitle title="Projects" /></span>
+        <SectionTitle title="Projects" />
+      </span>
       {projects.map((project, index) => (
         <Card
           left={index % 2 === 0}

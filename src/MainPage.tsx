@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Hero, AboutMe, Projects } from "./Sections";
 import { Socials, Navbar } from "./components";
 
+
 const MainPaige = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavAnimating, setIsNavAnimating] = useState(true);

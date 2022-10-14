@@ -50,6 +50,10 @@
     height: 40rem;
 }
 
+.cardImage {
+    object-fit: fill;
+}
+
 .cardTechStack {
     position: relative;
     display: flex;

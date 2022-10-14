@@ -40,7 +40,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section className={styles.aboutMeSection} ref={aboutMeRef}>
+    <section className={styles.aboutMeSection} ref={aboutMeRef} id="about-me">
       <SectionTitle title="About Me" />
       <div className={styles.aboutMeContent}>
         <div className={styles.aboutMeTextContainer}>

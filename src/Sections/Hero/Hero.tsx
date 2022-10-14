@@ -41,7 +41,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ setIsAnimating }) => {
   return (
-    <section className={styles.heroSection}>
+    <section className={styles.heroSection} id="hero">
       {content.map((item, index) => (
         <CSSTransition
           key={index}

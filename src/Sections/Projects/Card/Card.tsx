@@ -68,7 +68,7 @@ const Card: React.FC<CardProps> = (props) => {
         <Filter
           src={props.image}
           alt={props.title}
-          classNameFilter={styles.filter}
+          classNameImage={styles.cardImage}
         />
       </a>
       </div>

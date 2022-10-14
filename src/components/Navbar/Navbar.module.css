@@ -34,6 +34,10 @@
   color: var(--color-highlight);
 }
 
+.hamburgerWrapper {
+  z-index: 11;
+}
+
 .navMenu {
   display: flex;
   flex-direction: column;
