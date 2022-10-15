@@ -1,23 +1,23 @@
 import { useEffect } from "react";
 
-//https://usehooks.com/useOnClickOutside/
+//https://usehooks.com/useOnClickOutside/ (modified)
 const useOnClickOutside = (
-  ref: React.RefObject<HTMLDivElement | null>,
+  refArr: React.RefObject<HTMLDivElement | null>[],
   handler: () => void
 ) => {
   useEffect(
     () => {
       const listener = (event: Event) => {
         // Do nothing if clicking ref's element or descendent elements
-        if (ref?.current) {
+        for (const ref of refArr) {
           if (
             !ref.current ||
             ref.current.contains(event.target as HTMLElement)
           ) {
             return;
           }
-          handler();
         }
+        handler();
       };
       document.addEventListener("mousedown", listener);
       document.addEventListener("touchstart", listener);
@@ -32,7 +32,7 @@ const useOnClickOutside = (
     // ... callback/cleanup to run every render. It's not a big deal ...
     // ... but to optimize you can wrap handler in useCallback before ...
     // ... passing it into this hook.
-    [ref, handler]
+    [refArr, handler]
   );
 };
 

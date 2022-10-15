@@ -1,5 +1,4 @@
 .projectsSection {
-    margin: 20rem auto;
     width: min(110rem, 100vw);
     display: flex;
     flex-direction: column;

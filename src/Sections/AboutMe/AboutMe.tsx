@@ -24,7 +24,7 @@ const skills = [
 ];
 
 const AboutMe = () => {
-  const aboutMeRef = useRef<HTMLElement | null>(null);
+  const aboutMeRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (aboutMeRef.current) {

@@ -66,7 +66,7 @@ const Experience = () => {
       }, []);
 
   return (
-    <div className={styles.experienceSection}>
+    <section className={styles.experienceSection} id="experience">
       <SectionTitle title="Experience" ref={titleRef}/>
       <div className={styles.experienceContent}>
         {experience.map((exp, index) => (
@@ -81,7 +81,7 @@ const Experience = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

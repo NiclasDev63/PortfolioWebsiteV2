@@ -1,0 +1,35 @@
+.contactSection {
+    margin-top: -20rem;
+    width: 90rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contactButton {
+    width: 15rem;
+    font-size: var(--font-size-3);
+    padding: 1.5rem;
+}
+
+.contactDescription {
+    width: 65%;
+    font-size: var(--font-size-4)
+}
+
+@media screen and (max-width: 1200px) {
+    .contactSection {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .contactDescription {
+        width: 85%;
+        font-size: var(--font-size-4)
+    }
+
+}

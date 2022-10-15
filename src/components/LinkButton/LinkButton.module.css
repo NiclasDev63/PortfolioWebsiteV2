@@ -1,0 +1,16 @@
+.linkButton {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--color-highlight);
+    color: var(--color-highlight);
+    border-radius: var(--border-radius-standard);
+    width: 20rem;
+    padding: 2rem;
+    font-size: var(--font-size-4);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.linkButton:hover {
+    background-color: rgba(56, 217, 169, 0.1);
+}

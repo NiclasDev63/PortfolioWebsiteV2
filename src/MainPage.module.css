@@ -1,18 +1,20 @@
-.mainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1000rem;
-}
-
 .blur {
     filter: blur(4px);
     -webkit-filter: blur(4px);
 }
 
+.heroWrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
 .mainContent {
     margin: 0 auto;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem;
 }
 
 .placeHolder {

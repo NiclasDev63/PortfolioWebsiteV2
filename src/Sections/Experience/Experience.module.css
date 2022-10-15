@@ -1,5 +1,4 @@
 .experienceSection {
-    margin: 40rem auto;
     width: min(125rem, 100vw);
     display: flex;
     flex-direction: column;

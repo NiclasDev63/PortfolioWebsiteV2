@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import { CSSTransition } from "react-transition-group";
 import "animate.css";
+import { LinkButton } from "../../components";
 
 const content = [
   {
@@ -23,14 +24,11 @@ const content = [
   },
   {
     content: (
-      <a
-        href={"/assets/NiclasGregorCV.pdf"}
-        target="_blank"
-        rel="noreferrer"
+      <LinkButton
+        href="/assets/NiclasGregorCV.pdf"
+        content="Resume"
         className={styles.CVButton}
-      >
-        Resume
-      </a>
+      />
     ),
   },
 ];

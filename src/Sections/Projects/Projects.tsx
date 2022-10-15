@@ -64,7 +64,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className={styles.projectsSection} id="projects">
+    <section className={styles.projectsSection} id="projects">
       <span className={styles.titleWrapper} ref={titleRef}>
         <SectionTitle title="Projects" />
       </span>
@@ -79,7 +79,7 @@ const Projects = () => {
           key={index}
         />
       ))}
-    </div>
+    </section>
   );
 };
 
