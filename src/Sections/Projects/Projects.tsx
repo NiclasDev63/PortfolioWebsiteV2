@@ -64,7 +64,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className={styles.projectsContainer} id="projects">
+    <div className={styles.projectsSection} id="projects">
       <span className={styles.titleWrapper} ref={titleRef}>
         <SectionTitle title="Projects" />
       </span>

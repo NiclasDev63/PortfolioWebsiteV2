@@ -1,0 +1,40 @@
+.experienceSection {
+    margin: 40rem auto;
+    width: min(125rem, 100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.experienceContent {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .experienceSection {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experienceContent {
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .experienceSection {
+        gap: 6rem;
+    }
+
+    .experienceContent {
+        gap: 6rem;
+    }
+
+}

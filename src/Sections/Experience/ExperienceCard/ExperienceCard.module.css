@@ -1,0 +1,114 @@
+.expCardContainer {
+    position: relative;
+    width: 50%;
+}
+
+.expCardContainerRight {
+    margin-left: auto;
+}
+
+.expCard {
+    position: relative;
+    width: 80%;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-standard);
+    box-shadow: var(--box-shadow-1);
+}
+
+.expCardRight {
+    margin-left: auto;
+}
+
+.expCardInfo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-1);
+    background-color: var(--color-primary);
+}
+
+.expCardInfoLeft {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.expCardInfoRight {
+    transform: translate(-50%, -50%);
+}
+
+.timeLine {
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    background-color: var(--color-primary-tint-1);
+    width: 0.2rem;
+    height: 150%;
+}
+
+.timeLineRight {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.timeLineContent {
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-500);
+    color: var(--font-color-header-1);
+}
+
+.expCardContent {
+    padding: 2rem;
+    padding-left: 3rem;
+}
+
+.expCardTitle {
+    font-size: 4rem;
+    letter-spacing: -0.06rem;
+}
+
+.expCardJobTitle {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.expCardDescription {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .expCardContainer {
+        margin-top: 10rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expCardContainerRight {
+        margin-left: 0;
+    }
+
+    .expCard {
+        width: 100%;
+    }
+
+    .expCardInfo {
+        position: relative;
+        transform: translateY(-50%);
+    }
+
+    .timeLine {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 480px) {}
