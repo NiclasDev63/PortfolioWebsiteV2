@@ -24,32 +24,54 @@
   --font-size-10: 7.2rem;
   --font-size-11: 9.6rem;
 
-  /* Font-Color */
-  --font-color-header-1: #ced4da;
-  --font-color-header-2: #868e96;
-
-  --font-color-paragraph: #495057;
-
-  /* Colors */
-  --color-primary-shadow-2: #091629;
-  --color-primary-shadow-1: #0a182e;
-  --color-primary: #0b1b33;
-  --color-primary-light: #0e2447;
-  --color-primary-tint-1: #233247;
-  --color-primary-tint-2: #3c495c;
-  --color-primary-tint-3: #545f70;
-
-  --color-highlight: #38d9a9;
-  --color-highlight-shade-1: #32c398;
-  --color-highlight-shade-2: #2dae87;
-  --color-highlight-shade-3: #279876;
-
   /* Border Radius */
   --border-radius-standard: 0.4rem;
 
-  /*Box Shadow */
-  --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 17, 39, 0.6);
 
+  /*-------------Dark Theme-------------*/
+  /*Main Colors*/
+  --color-primary-shadow-2: #062227;
+  --color-primary-shadow-1: #072b31;
+  --color-primary: #06272c;
+  --color-primary-tint-1: #204046;
+  --color-primary-tint-2: #072b31;
+
+  /*Highlight Colors*/
+  --color-highlight: #a08830;
+
+  /*Font Colors*/
+  --font-color-header-1: #ced4da;
+  --font-color-header-2: #a3c7d2;
+  --font-color-paragraph: #5a8b92;
+
+
+  /*Filter Colors*/
+  --color-filter: #6ba4b8;
+  --color-filter-2: #177280;
+
+
+  /*Box Shadow */
+  --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 31, 36, 0.4);
+
+
+  /*-------------Light Theme-------------*/
+  /* --color-primary: #e67700; */
+
+  /*Highlight Colors*/
+  /* --color-highlight: #82c91e; */
+
+  /*Font Colors*/
+  /* --font-color-header-1: #fff3bf;
+  --font-color-header-2: #ffec99;
+  --font-color-paragraph: #fab005; */
+
+
+  /*Filter Colors*/
+  /* --color-filter: #ffe066;
+  --color-filter-2: #ffd43b; */
+
+  /*Box Shadow */
+  --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 31, 36, 0.4);
 }
 
 * {
@@ -59,16 +81,13 @@
   box-sizing: border-box;
 }
 
-
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
 
-
 ::-webkit-scrollbar-track {
   background: none;
 }
-
 
 ::-webkit-scrollbar-thumb {
   background: var(--font-color-paragraph);

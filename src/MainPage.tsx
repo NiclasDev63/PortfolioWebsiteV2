@@ -7,7 +7,7 @@ const MainPaige = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavAnimating, setIsNavAnimating] = useState(true);
   const [isHeroAnimating, setIsHeroAnimating] = useState(true);
-
+  // document.documentElement.style.setProperty(
   return (
     <>
       <Navbar

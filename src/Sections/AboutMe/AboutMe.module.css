@@ -34,7 +34,7 @@
     left: 2rem;
     bottom: -1rem;
     right: -1rem;
-    border: 3px solid var(--color-highlight);
+    border: 3px solid var(--color-filter);
     border-radius: var(--border-radius-standard);
     opacity: 0.5;
 }
@@ -42,7 +42,7 @@
 .imgFilter {
     height: inherit;
     width: inherit;
-    background-color: var(--color-highlight);
+    background-color: var(--color-filter);
     border-radius: var(--border-radius-standard);
     transition: transform 0.5s ease;
 }

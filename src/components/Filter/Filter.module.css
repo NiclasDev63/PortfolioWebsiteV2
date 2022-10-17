@@ -1,7 +1,7 @@
 .imgFilter {
     height: 100%;
     width: 100%;
-    background-color: var(--color-highlight);
+    background-color: var(--color-filter-2);
     border-radius: var(--border-radius-standard);
 }
 

@@ -33,13 +33,10 @@
 }
 
 .cardDescription {
-    font-size: var(--font-size-4);
-}
-
-.cardDescription {
     text-align: justify;
+    font-size: var(--font-size-4);
     padding: 3rem;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-primary);
     box-shadow: var(--box-shadow-1);
     border-radius: var(--border-radius-standard);
     z-index: 2;
@@ -56,8 +53,11 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    font-size: var(--font-size-4);
     z-index: 2;
+}
+
+.cardTech {
+    font-size: var(--font-size-4);
 }
 
 .cardLinkIcon {

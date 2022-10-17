@@ -1,5 +1,5 @@
 import styles from "./Projects.module.css";
-import Card from "./Card/Card";
+import Card from "./ProjectsCard/ProjectsCard";
 import { SectionTitle } from "../../components";
 import ScrollReveal from "scrollreveal";
 import { useRef, useEffect } from "react";

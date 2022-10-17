@@ -1,4 +1,4 @@
-import styles from "./Card.module.css";
+import styles from "./ProjectsCard.module.css";
 import { FiGithub } from "react-icons/fi";
 import { Filter } from "../../../components";
 import ScrollReveal from "scrollreveal";
@@ -41,7 +41,9 @@ const Card: React.FC<CardProps> = (props) => {
     <div className={containerClass} ref={cardRef}>
       <div className={contentClass}>
         <h1 className={styles.cardTitle}>{props.title}</h1>
-        <p className={styles.cardDescription}>{props.description}</p>
+        <div className={styles.cardDescription}>
+        <p>{props.description}</p>
+        </div>
         <div className={styles.cardTechStack}>
           {props.techStack.map((tech, index) => (
             <p className={styles.cardTech} key={index}>

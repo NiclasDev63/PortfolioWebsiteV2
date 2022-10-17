@@ -85,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         <nav
           className={styles.navbar}
           style={{
-            boxShadow: isAtTop ? "" : "0 0 2rem 0.5rem rgba(2, 14, 32, 0.8)",
+            boxShadow: isAtTop ? "" : "var(--box-shadow-1)",
           }}
         >
           <Logo />
