@@ -3,11 +3,11 @@ import { useState } from "react";
 import { Socials, Navbar } from "./components";
 import { Hero, AboutMe, Projects, Experience, Contact } from "./Sections";
 
+// document.documentElement.style.setProperty()
 const MainPaige = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavAnimating, setIsNavAnimating] = useState(true);
   const [isHeroAnimating, setIsHeroAnimating] = useState(true);
-  // document.documentElement.style.setProperty(
   return (
     <>
       <Navbar

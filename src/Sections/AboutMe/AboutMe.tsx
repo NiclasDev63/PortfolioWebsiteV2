@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import "animate.css";
 import ScrollReveal from "scrollreveal";
 import { BiPlus } from "react-icons/bi";
-import { SectionTitle } from "../../components";
+import { SectionTitle, TextHighlight } from "../../components";
 
 const skills = [
   "HTML",
@@ -45,30 +45,18 @@ const AboutMe = () => {
       <div className={styles.aboutMeContent}>
         <div className={styles.aboutMeTextContainer}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-            beatae dolore labore dolor optio. Nostrum quasi dignissimos corporis
-            officiis illum voluptas. Ex quae quam adipisci maxime saepe mollitia
-            sunt quaerat! Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Qui, commodi. Ea consequatur molestias quisquam voluptatum in
-            aperiam tenetur eum, porro beatae maxime aspernatur natus eius minus
-            odit reprehenderit. Exercitationem, provident!
+            Hi,  <TextHighlight>my name is Niclas Gregor. I am a 21 Year old Computer Science Student from germany</TextHighlight>. I started programming a few years ago and have been passionate about software development ever since. In 2022 I started to get more involved in the field of web development, because it gives you the opportunity to reach billions of people with your ideas and projects.
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-            facilis consequuntur hic harum maxime sint eum blanditiis? Iure,
-            aut. Accusamus consequuntur dolorem adipisci? Eligendi, voluptate
-            quidem. Culpa animi eos voluptate.
+          Although I only started programming in 2020, I have <TextHighlight>always had a connection to computers.</TextHighlight> Already in my younger years I made changes in the code of games to modify them according to my wishes.
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            culpa, accusantium quo aut recusandae, veniam esse harum odio non
-            sapiente beatae laudantium nihil adipisci reprehenderit,
-            exercitationem consequatur nulla ea aliquid!
+          Since <TextHighlight>I dug into many different areas</TextHighlight> at the beginning of my computer science career to find out what I enjoy most, I <TextHighlight>got to know many different things and technologies</TextHighlight>, which gave me a very good overview of computer science in general.
           </p>
 
-          <p>Here are a few technologies I’ve been working with recently:</p>
+          <p>Here are a few of the <TextHighlight>technologies that particularly fascinated and interested me:</TextHighlight></p>
           <div className={styles.skillsContainer}>
             {skills.map((skill, index) => (
               <div className={styles.skillContainer} key={index}>

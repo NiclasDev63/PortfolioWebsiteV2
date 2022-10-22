@@ -10,7 +10,8 @@
 .expCard {
     position: relative;
     width: 80%;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background-color: rgb(2, 32, 29);
     border-radius: var(--border-radius-standard);
     box-shadow: var(--box-shadow-1);
 }

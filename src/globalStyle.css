@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inter+Tight:wght@400;500;700&family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 :root {
 
   /* Font */
   --font-mono: 'Fira Mono', monospace, 'Roboto', sans-serif;
-  --font-inter: 'Inter Tight', 'Inter';
+  --font-poppins: 'Poppins', sans-serif;
 
   /* Font-Weight */
   --font-weight-400: 400;
@@ -38,6 +40,8 @@
 
   /*Highlight Colors*/
   --color-highlight: #a08830;
+  --color-highlight: rgb(0, 255, 136);
+
 
   /*Font Colors*/
   --font-color-header-1: #ced4da;
@@ -46,12 +50,15 @@
 
 
   /*Filter Colors*/
-  --color-filter: #6ba4b8;
+  --color-filter: #79dbff;
   --color-filter-2: #177280;
 
 
   /*Box Shadow */
   --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 31, 36, 0.4);
+
+  /*Scrollbar*/
+  --scrollbar-thumb-color: #244c52;
 
 
   /*-------------Light Theme-------------*/
@@ -71,11 +78,29 @@
   --color-filter-2: #ffd43b; */
 
   /*Box Shadow */
-  --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 31, 36, 0.4);
+  /* --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 31, 36, 0.4); */
+
+  /* --color-primary: #ff6b6b; */
+
+  /*Highlight Colors*/
+  /* --color-highlight: #82c91e; */
+
+  /*Font Colors*/
+  /* --font-color-header-1: #fff3bf; */
+  /* --font-color-header-2: #ffec99; */
+  /* --font-color-paragraph: #fab005; */
+
+
+  /*Filter Colors*/
+  /* --color-filter: #ffe066; */
+  /* --color-filter-2: #ffd43b; */
+
+  /*Box Shadow */
+  /* --box-shadow-1: 0 0 1rem 0.5rem rgba(4, 31, 36, 0.4); */
 }
 
 * {
-  font-family: var(--font-inter);
+  font-family: var(--font-poppins);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -90,7 +115,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--font-color-paragraph);
+  background-color: var(--scrollbar-thumb-color);
   border-radius: 1.2rem;
 }
 
@@ -107,12 +132,12 @@ body {
 
 h1 {
   color: var(--font-color-header-1);
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-500);
 }
 
 h2 {
   color: var(--font-color-header-2);
-  font-weight: var(--font-weight-700);
+  font-weight: var(--font-weight-500);
 }
 
 p {

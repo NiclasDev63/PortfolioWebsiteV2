@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 interface ExperienceCardProps {
   title: string;
   jobtitle: string;
-  description: string;
+  description: JSX.Element;
   date: string;
   right: boolean;
   index: number;
