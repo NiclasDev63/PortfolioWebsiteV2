@@ -22,7 +22,7 @@ const useAnimation = (
       clearTimeout(mountedTiemout);
       clearTimeout(animatingTimeout);
     };
-  }, []);
+  }, [duration]);
 
   return { isMounted, isAnimating };
 };
