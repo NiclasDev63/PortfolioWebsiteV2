@@ -16,7 +16,7 @@ const useGetWidth = (wantedWidth: number): boolean => {
     return () => {
       window.removeEventListener("resize", resizeHandler);
     };
-  }, [window.innerWidth, resizeHandler]);
+  }, );
 
   return hasWidth;
 };

@@ -18,7 +18,7 @@ const useIsAtPosition = (wantedPosition: number): boolean => {
     return () => {
       window.removeEventListener("scroll", scrollHandler);
     };
-  }, [scrollHandler]);
+  },);
 
   return isAtPosition;
 };
