@@ -24,7 +24,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = (props) => {
         viewFactor: 0.25,
       });
     }
-  }, );
+  }, [props.right]);
 
   const classCardContainer = props.right
     ? `${styles.expCardContainer} ${styles.expCardContainerLeft}`
