@@ -26,7 +26,7 @@ const content = [
   {
     content: (
       <LinkButton
-        href="/assets/NiclasGregorCV.pdf"
+        href="/assets/NiclasGregorCVEnglish.pdf"
         content="Resume"
         className={styles.CVButton}
       />

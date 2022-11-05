@@ -67,7 +67,7 @@ const Experience = () => {
 
   return (
     <section className={styles.experienceSection} id="experience">
-      <SectionTitle title="Experience" ref={titleRef}/>
+      <SectionTitle title="Experience & Education" ref={titleRef}/>
       <div className={styles.experienceContent}>
         {experience.map((exp, index) => (
           <ExperienceCard
