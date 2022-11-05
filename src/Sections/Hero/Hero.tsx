@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import { CSSTransition } from "react-transition-group";
+import { TextHighlight } from "../../components";
 import "animate.css";
 import { LinkButton } from "../../components";
 
@@ -16,8 +17,8 @@ const content = [
   {
     content: (
       <p className={styles.heroDescription}>
-        I am 21 years old and currently studying computer science at the
-        technical university in Darmstadt. I am passionate about developing new
+        I am <TextHighlight>21 years old</TextHighlight> and currently <TextHighlight>studying computer science at the
+        technical university in Darmstadt</TextHighlight>. I am passionate about developing new
         software / websites and am always looking for new challenges.
       </p>
     ),

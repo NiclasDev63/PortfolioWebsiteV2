@@ -7,7 +7,7 @@ import { useRef, useEffect } from "react";
 interface CardProps {
   left: boolean;
   title: string;
-  description: string;
+  description: JSX.Element;
   image: string;
   techStack: string[];
   link: string;
