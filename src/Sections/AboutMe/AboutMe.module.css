@@ -119,6 +119,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .aboutMeSection {
+        word-break: break-all;
+    }
+
     .aboutMeTitle {
         font-size: var(--font-size-5);
     }
