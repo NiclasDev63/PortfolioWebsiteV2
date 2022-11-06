@@ -45,7 +45,7 @@ const AboutMe = () => {
       <div className={styles.aboutMeContent}>
         <div className={styles.aboutMeTextContainer}>
           <p>
-            Hi,  <TextHighlight>my name is Niclas Gregor. I am a 21 Year old Computer Science Student from germany</TextHighlight>. I started programming a few years ago and have been passionate about software development ever since. In 2022 I started to get more involved in the field of web development, because it gives you the opportunity to reach billions of people with your ideas and projects.
+            Hi,  <TextHighlight>my name is Niclas Gregor. I am a 22 Year old Computer Science Student from germany</TextHighlight>. I started programming a few years ago and have been passionate about software development ever since. In 2022 I started to get more involved in the field of web development, because it gives you the opportunity to reach billions of people with your ideas and projects.
           </p>
 
           <p>
