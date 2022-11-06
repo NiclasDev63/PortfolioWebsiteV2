@@ -48,6 +48,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Acknowledgement
 Thanks to Brittany Chiang for the design inspiration
+<br>
 Github: https://github.com/bchiang7
 
 (I was only inspired by the design, but did not copy any part of her code) 
