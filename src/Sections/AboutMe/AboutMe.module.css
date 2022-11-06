@@ -127,6 +127,11 @@
         font-size: var(--font-size-5);
     }
 
+    
+    .skill {
+        font-size: var(--font-size-1);
+    }
+
     .imgContainer {
         position: relative;
         height: 30rem;
