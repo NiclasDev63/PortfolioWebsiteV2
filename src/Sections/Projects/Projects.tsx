@@ -6,6 +6,15 @@ import { useRef, useEffect } from "react";
 
 const projects = [
   {
+    title: "ImmoGPT",
+    description:<>ImmoGPT is a <TextHighlight>chatbot specialized in real estate</TextHighlight>, which has been <TextHighlight>equipped with the necessary tools to search and analyze the current real estate market</TextHighlight> within germany.
+    It has the ability to <TextHighlight>divide its task into several steps</TextHighlight> if necessary and then work through them step by step.
+    It is <TextHighlight>based on gpt3.5</TextHighlight> from openai, which is accessed via the api.</> ,
+    image: "/assets/ProjectImages/ChatGPT.webp",
+    techStack: ["Python", "Web Crawling", "Prompt Engineering", "LLM"],
+    link: "https://github.com/NiclasDev63/ImmoGPT",
+  },
+  {
     title: "Spooky Chat",
     description:<>Spooky Chat is a chat platform that is <TextHighlight>completely anonymous</TextHighlight>. You don't have to provide an email address or any other information. The chat platform is designed so that no data is stored and <TextHighlight>you always start from "zero" to guarantee full anonymity.</TextHighlight></>,
     image: "/assets/ProjectImages/SpookyChat.webp",
