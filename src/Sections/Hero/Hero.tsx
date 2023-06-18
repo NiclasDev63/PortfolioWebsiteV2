@@ -18,7 +18,7 @@ const content = [
   {
     content: (
       <p className={styles.heroDescription}>
-        I am <TextHighlight>{calcAge()} years old</TextHighlight> and currently <TextHighlight>studying computer science at the
+        I am <TextHighlight>{calcAge()} year old</TextHighlight> and currently <TextHighlight>studying computer science at the
         technical university in Darmstadt</TextHighlight>. I am passionate about developing new
         software / websites and am always looking for new challenges.
       </p>
