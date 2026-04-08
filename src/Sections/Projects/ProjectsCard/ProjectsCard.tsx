@@ -11,6 +11,7 @@ interface CardProps {
   image: string;
   techStack: string[];
   link: string;
+  hideGithubIcon?: boolean;
 }
 
 const Card: React.FC<CardProps> = (props) => {
@@ -42,7 +43,7 @@ const Card: React.FC<CardProps> = (props) => {
       <div className={contentClass}>
         <h1 className={styles.cardTitle}>{props.title}</h1>
         <div className={styles.cardDescription}>
-        <p>{props.description}</p>
+          <p>{props.description}</p>
         </div>
         <div className={styles.cardTechStack}>
           {props.techStack.map((tech, index) => (
@@ -51,27 +52,26 @@ const Card: React.FC<CardProps> = (props) => {
             </p>
           ))}
         </div>
+        {!props.hideGithubIcon && (
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.cardLink}
+          >
+            <FiGithub className={styles.cardLinkIcon} />
+          </a>
+        )}
+      </div>
+      <div className={styles.cardImageContainer}>
         <a
           href={props.link}
           target="_blank"
           rel="noreferrer"
-          className={styles.cardLink}
+          className={styles.imgLink}
         >
-          <FiGithub className={styles.cardLinkIcon} />
+          <Filter src={props.image} alt={props.title} />
         </a>
-      </div>
-      <div className={styles.cardImageContainer}>
-      <a
-        href={props.link}
-        target="_blank"
-        rel="noreferrer"
-        className={styles.imgLink}
-      >
-        <Filter
-          src={props.image}
-          alt={props.title}
-        />
-      </a>
       </div>
     </div>
   );

@@ -33,6 +33,7 @@ const projects = [
       "Tailwind CSS",
     ],
     link: "https://www.scibly.com",
+    hideGithubIcon: true,
   },
   {
     title: "Simplegrad",
@@ -141,6 +142,7 @@ const Projects = () => {
           image={project.image}
           techStack={project.techStack}
           link={project.link}
+          hideGithubIcon={project.hideGithubIcon}
           key={index}
         />
       ))}
