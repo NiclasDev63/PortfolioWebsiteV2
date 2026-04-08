@@ -6,48 +6,109 @@ import { useRef, useEffect } from "react";
 
 const projects = [
   {
+    title: "Scibly",
+    description: (
+      <>
+        Scibly is a{" "}
+        <TextHighlight>
+          modern worksheet creation and distribution platform for educators
+        </TextHighlight>
+        , built to simplify and digitize the entire workflow from idea to
+        classroom use. It enables teachers to{" "}
+        <TextHighlight>
+          transform existing materials into interactive formats or create new
+          ones from scratch using an intuitive editor
+        </TextHighlight>
+        , making it easy to share, adapt, and reuse content across different
+        learning environments.
+      </>
+    ),
+    image: "https://scibly-assets.s3.eu-central-1.amazonaws.com/thumbnail.png",
+    techStack: [
+      "Next.js",
+      "tRPC",
+      "PostgreSQL",
+      "Prisma",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    link: "https://www.scibly.com",
+  },
+  {
+    title: "Simplegrad",
+    description: (
+      <>
+        Simplegrad is a{" "}
+        <TextHighlight>
+          minimal NumPy-based autodiff and neural network library
+        </TextHighlight>
+        , featuring a custom Tensor with a dynamic computation graph and{" "}
+        <TextHighlight>reverse-mode automatic differentiation</TextHighlight>.
+        It includes lightweight abstractions for building and training models,
+        providing a{" "}
+        <TextHighlight>
+          clear, from-scratch implementation of core deep learning concepts
+        </TextHighlight>{" "}
+        similar to frameworks like PyTorch.
+      </>
+    ),
+    image: "/assets/ProjectImages/Simplegrad.webp",
+    techStack: ["Python", "NumPy"],
+    link: "https://github.com/NiclasDev63/simplegrad",
+  },
+  {
     title: "ImmoGPT",
-    description:<>ImmoGPT is a <TextHighlight>chatbot specialized in real estate</TextHighlight>, which has been <TextHighlight>equipped with the necessary tools to search and analyze the current real estate market</TextHighlight> within germany.
-    It has the ability to <TextHighlight>divide its task into several steps</TextHighlight> if necessary and then work through them step by step.
-    It is <TextHighlight>based on gpt3.5</TextHighlight> from openai, which is accessed via the api.</> ,
+    description: (
+      <>
+        ImmoGPT is a <TextHighlight>real estate–focused chatbot</TextHighlight>{" "}
+        designed to
+        <TextHighlight>
+          search and analyze the German property market using dedicated data
+          retrieval tools
+        </TextHighlight>
+        . It is capable of{" "}
+        <TextHighlight>
+          decomposing complex queries into structured, multi-step workflows
+        </TextHighlight>
+        to deliver more accurate results. The system is{" "}
+        <TextHighlight>built on GPT-3.5 via the OpenAI API</TextHighlight>.
+      </>
+    ),
     image: "/assets/ProjectImages/ChatGPT.webp",
     techStack: ["Python", "Web Crawling", "Prompt Engineering", "LLM"],
     link: "https://github.com/NiclasDev63/ImmoGPT",
   },
   {
-    title: "Spooky Chat",
-    description:<>Spooky Chat is a chat platform that is <TextHighlight>completely anonymous</TextHighlight>. You don't have to provide an email address or any other information. The chat platform is designed so that no data is stored and <TextHighlight>you always start from "zero" to guarantee full anonymity.</TextHighlight></>,
-    image: "/assets/ProjectImages/SpookyChat.webp",
-    techStack: ["React", "Typescript", "CSS", "HTML", "Firestore"],
-    link: "https://github.com/NiclasDev63/SpookyChat",
-  },
-  {
-    title: "Mnist Recognition",
-    description:<>This project served to <TextHighlight>gain initial experience in the field of artificial intelligence</TextHighlight>. For this purpose, I <TextHighlight>trained a model using the MNIST dataset</TextHighlight>, so that it is able to determine digits drawn with the mouse.</>,
-    image: "/assets/ProjectImages/Mnist.webp",
-    techStack: ["Python", "Javascript", "HTML", "CSS", "Tensorflow"],
-    link: "https://github.com/NiclasDev63/MNISTRecognition",
-  },
-  {
-    title: "Algorithm Tutorial",
-    description:<>This <TextHighlight>tutorial series served to explain common algorithms simply and clearly in the German language</TextHighlight>.</>,
-    image: "/assets/ProjectImages/AlgorithmTutorial.webp",
-    techStack: ["Python"],
-    link: "https://github.com/NiclasDev63/Algorithmen-einfach-erklaert",
-  },
-  {
     title: "Algorithm Visualizer",
-    description:<>I have developed the Algorithm Visualizer to <TextHighlight>illustrate a few of the algorithms covered in my course.</TextHighlight></>,
+    description: (
+      <>
+        The Algorithm Visualizer was developed to
+        <TextHighlight>
+          provide interactive visual representations of selected algorithms
+        </TextHighlight>
+        , enhancing understanding through step-by-step execution.
+      </>
+    ),
     image: "/assets/ProjectImages/AlgorithmVisualizer.png",
     techStack: ["Python", "Turtle"],
     link: "https://github.com/NiclasDev63/Algorithm-visualization",
   },
   {
-    title: "ImmoScout24 Crawler",
-    description:<>This was my <TextHighlight>first project</TextHighlight> when I started programming. Since I am also very interested in real estate besides programming I wrote an <TextHighlight>Immoscout24 crawler</TextHighlight> that <TextHighlight>automatically searches out all properties at a desired location and calculates them</TextHighlight> based on the rent index which is scraped from the homeday price atlas.</>,
-    image: "/assets/ProjectImages/ImmoScout24Crawler.jpg",
-    techStack: ["Python", "BeautifulSoup", "Requests", "Pandas"],
-    link: "https://github.com/NiclasDev63/ImmoScout24Crawler",
+    title: "Algorithm Tutorial",
+    description: (
+      <>
+        This <TextHighlight>German-language tutorial series</TextHighlight> was
+        created to
+        <TextHighlight>
+          explain fundamental algorithms in a clear, structured, and accessible
+          manner
+        </TextHighlight>
+        .
+      </>
+    ),
+    image: "/assets/ProjectImages/AlgorithmTutorial.webp",
+    techStack: ["Python"],
+    link: "https://github.com/NiclasDev63/Algorithmen-einfach-erklaert",
   },
 ];
 

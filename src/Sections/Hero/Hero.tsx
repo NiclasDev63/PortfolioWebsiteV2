@@ -3,7 +3,7 @@ import { CSSTransition } from "react-transition-group";
 import { TextHighlight } from "../../components";
 import "animate.css";
 import { LinkButton } from "../../components";
-import calcAge from "../../utils/calcAge"
+import calcAge from "../../utils/calcAge";
 
 const content = [
   {
@@ -18,9 +18,15 @@ const content = [
   {
     content: (
       <p className={styles.heroDescription}>
-        I am <TextHighlight>{calcAge()} years old</TextHighlight> and currently <TextHighlight>studying computer science at the
-        technical university in Darmstadt</TextHighlight>. I am passionate about developing new
-        software / websites and am always looking for new challenges.
+        I’m <TextHighlight>{calcAge()} years old</TextHighlight> and previously
+        <TextHighlight>
+          {" "}
+          studied Computer Science at the Technical University of Darmstadt
+        </TextHighlight>
+        . I enjoy building software and web applications, and I’m always looking
+        for new challenges. <TextHighlight>Currently</TextHighlight>, I’m{" "}
+        <TextHighlight>developing software at Web Computing GmbH</TextHighlight>
+        .
       </p>
     ),
   },

@@ -6,68 +6,109 @@ import { useRef, useEffect } from "react";
 
 const experience = [
   {
+    title: "Software Engineer @ Web Computing GmbH",
+    jobtitle: "Software Engineer",
+    description: (
+      <>
+        Currently working as a{" "}
+        <TextHighlight>Software Engineer at Web Computing</TextHighlight>,
+        building and maintaining modern web applications and software systems.
+      </>
+    ),
+    date: "October 2025 - Present",
+  },
+  {
+    title: "EY-Parthenon",
+    jobtitle: "Computer Science Intern",
+    description: (
+      <>
+        Worked on the{" "}
+        <TextHighlight>
+          design and implementation of an AI-powered data platform
+        </TextHighlight>{" "}
+        using Next.js, TypeScript, and Python. Developed PII detection models
+        with PyTorch and Hugging Face, and built data visualization and
+        automation solutions for complex workflows.
+      </>
+    ),
+    date: "October 2024 - September 2025",
+  },
+  {
+    title: "Fraunhofer SIT",
+    jobtitle: "Research Assistant",
+    description: (
+      <>
+        Conducted research on{" "}
+        <TextHighlight>
+          misinformation detection using NLP techniques
+        </TextHighlight>
+        . Improved data processing performance significantly and developed a
+        React-based visualization tool to present research results.
+      </>
+    ),
+    date: "August 2023 - July 2024",
+  },
+  {
     title: "Bachelor of Science in Computer Science",
     jobtitle: "Student",
-    description:
-      <>I am currently pursuing my <TextHighlight>Bachelor's degree in Computer Science</TextHighlight> at the technical university of Darmstadt.</>,
-    date: "October 2022",
+    description: (
+      <>
+        Pursued a{" "}
+        <TextHighlight>Bachelor's degree in Computer Science</TextHighlight>{" "}
+        with a focus on Artificial Intelligence at TU Darmstadt.
+      </>
+    ),
+    date: "October 2022 - February 2026",
   },
   {
     title: "Pexon Consulting GmbH",
-    jobtitle: "Trainee / Cloud Engineer",
-    description:
-      <>I spent two months as a Trainee / Cloud Engineer <TextHighlight>developing REST APIs and CI/CD pipelines in Python and deploying them to the cloud (AWS)</TextHighlight>. These projects involved technology such as: <TextHighlight>Python, Flask, Docker, Kubernetes, various AWS Cloud Services, Terraform, Prometheus, Grafana </TextHighlight>and more.</>,
-    date: "August - September 2022",
-  },
-  {
-    title: "Mindsquare AG",
-    jobtitle: "Day Intern",
-    description:
-    <>I was able to accompany the employees in the area of software development and <TextHighlight>gained insights into the development of software in the SAP and Salesforce environment</TextHighlight> as well as dealing with and advising customers in terms of IT services</>,
-    date: "April 2022",
+    jobtitle: "Trainee",
+    description: (
+      <>
+        Completed an intensive training program focused on{" "}
+        <TextHighlight>
+          cloud infrastructure, DevOps, and backend development
+        </TextHighlight>
+        . Built and deployed REST APIs, implemented CI/CD pipelines, and worked
+        with AWS and Kubernetes.
+      </>
+    ),
+    date: "August 2022 - September 2022",
   },
   {
     title: "Freelancer",
     jobtitle: "Freelancer",
-    description:
-    <>I worked as a freelancer in the field of software development for about <TextHighlight>1.5 years</TextHighlight> and <TextHighlight>automated processes for various companies</TextHighlight> or extended already existing websites with functionalities.</>,
+    description: (
+      <>
+        I worked as a freelancer in the field of software development for about{" "}
+        <TextHighlight>1.5 years</TextHighlight> and{" "}
+        <TextHighlight>automated processes for various companies</TextHighlight>{" "}
+        or extended already existing websites with functionalities.
+      </>
+    ),
     date: "April 2021 - August 2022",
-  },
-  {
-    title: "Max-Eyth-Schule",
-    jobtitle: "Student",
-    description:
-    <>I graduated from high school in the field of <TextHighlight>business and administration </TextHighlight> with a <TextHighlight>grade point average of 2.0</TextHighlight>. (1.0 is the best possible grade)</>,
-    date: "August 2019 - April 2021",
-  },
-  {
-    title: "Audi Brass Dietzenbach GmbH & Co. KG",
-    jobtitle: "Annual Intern",
-    description:
-    <>I was entrusted with the support of customers and was also <TextHighlight>involved in the development of various marketing concepts</TextHighlight>.</>,
-    date: "August 2019 - March 2020",
   },
 ];
 
 const Experience = () => {
-    const titleRef = useRef<HTMLDivElement | null>(null);
+  const titleRef = useRef<HTMLDivElement | null>(null);
 
-    useEffect(() => {
-        if (titleRef.current) {
-          ScrollReveal().reveal(titleRef.current, {
-            origin: "bottom",
-            distance: "4rem",
-            easing: "linear",
-            delay: 200,
-            duration: 500,
-            viewFactor: 0.45,
-          });
-        }
-      }, []);
+  useEffect(() => {
+    if (titleRef.current) {
+      ScrollReveal().reveal(titleRef.current, {
+        origin: "bottom",
+        distance: "4rem",
+        easing: "linear",
+        delay: 200,
+        duration: 500,
+        viewFactor: 0.45,
+      });
+    }
+  }, []);
 
   return (
     <section className={styles.experienceSection} id="experience">
-      <SectionTitle title="Experience & Education" ref={titleRef}/>
+      <SectionTitle title="Experience & Education" ref={titleRef} />
       <div className={styles.experienceContent}>
         {experience.map((exp, index) => (
           <ExperienceCard

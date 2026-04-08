@@ -23,9 +23,8 @@ const Contact = () => {
     <section className={styles.contactSection} id="contact" ref={contactRef}>
       <SectionTitle title="Contact" width="50%" />
       <p className={styles.contactDescription}>
-        I'm currently not looking for a job, but I'm still always happy to
-        receive exciting project requests and I'll try to answer you as soon as
-        possible
+        I welcome interesting project inquiries and will do my best to respond
+        promptly.
       </p>
       <LinkButton
         href="mailto:niclas.gregor20@gmail.com"

@@ -4,11 +4,11 @@ import "animate.css";
 import ScrollReveal from "scrollreveal";
 import { BiPlus } from "react-icons/bi";
 import { SectionTitle, TextHighlight } from "../../components";
-import calcAge from "../../utils/calcAge"
+import calcAge from "../../utils/calcAge";
 
 const skills = [
   "HTML",
-  "CSS",
+  "(Tailwind) CSS",
   "JavaScript",
   "TypeScript",
   "Next.js",
@@ -16,16 +16,13 @@ const skills = [
   "Node.js",
   "Python",
   "Git",
-  "Github",
-  "NO SQL",
-  "SQL",
+  "tRPC",
+  "PostgreSQL",
+  "PyTorch",
   "Docker",
   "Kubernetes",
   "AWS",
 ];
-
-
-
 
 const AboutMe = () => {
   const aboutMeRef = useRef<HTMLDivElement | null>(null);
@@ -49,18 +46,46 @@ const AboutMe = () => {
       <div className={styles.aboutMeContent}>
         <div className={styles.aboutMeTextContainer}>
           <p>
-            Hi,  <TextHighlight>my name is Niclas Gregor. I am a {calcAge()} year old Computer Science Student from germany</TextHighlight>. I started programming a few years ago and have been passionate about software development ever since. In 2022 I started to get more involved in the field of web development, because it gives you the opportunity to reach billions of people with your ideas and projects.
+            Hi,{" "}
+            <TextHighlight>
+              my name is Niclas Gregor. I am a {calcAge()} year old Software
+              Engineer from germany
+            </TextHighlight>
+            . I started programming in 2020 and quickly developed a strong
+            interest in software development. In 2022, I began focusing more on
+            web development, drawn by its ability to turn ideas into products
+            that can reach people at scale.
           </p>
-
           <p>
-          Although I only started programming in 2020, I have <TextHighlight>always had a connection to computers.</TextHighlight> Already in my younger years I made changes in the code of games to modify them according to my wishes.
+            Although I started programming relatively "recently",{" "}
+            <TextHighlight>
+              my interest in computers goes back much further.
+            </TextHighlight>{" "}
+            As a kid, I was already modifying game files and experimenting with
+            code to change how things worked.
           </p>
-
           <p>
-          Since <TextHighlight>I dug into many different areas</TextHighlight> at the beginning of my computer science career to find out what I enjoy most, I <TextHighlight>got to know many different things and technologies</TextHighlight>, which gave me a very good overview of computer science in general.
+            {" "}
+            Early on,{" "}
+            <TextHighlight>
+              {" "}
+              I explored a wide range of areas within computer science{" "}
+            </TextHighlight>{" "}
+            to figure out what interested me most. Along the way, I{" "}
+            <TextHighlight>
+              {" "}
+              gained hands-on experience with various technologies{" "}
+            </TextHighlight>{" "}
+            , giving me a strong overall understanding of the field.{" "}
+          </p>{" "}
+          <p>
+            {" "}
+            Here are some of the{" "}
+            <TextHighlight>
+              {" "}
+              technologies that stood out to me the most:{" "}
+            </TextHighlight>{" "}
           </p>
-
-          <p>Here are a few of the <TextHighlight>technologies that particularly fascinated and interested me:</TextHighlight></p>
           <div className={styles.skillsContainer}>
             {skills.map((skill, index) => (
               <div className={styles.skillContainer} key={index}>
@@ -76,7 +101,7 @@ const AboutMe = () => {
           <div className={styles.backgroundBox}></div>
           <div className={styles.imgFilter}>
             <img
-              src="/assets/Passfoto.webp"
+              src="/assets/Me.webp"
               alt="Passfoto"
               className={styles.picture}
             />
